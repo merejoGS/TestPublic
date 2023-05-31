@@ -11,10 +11,17 @@
         <!-- Bootstrap  -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <!-- SCROOLL REVEAL JS LIBRARY CDN -->
-    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+        <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
         <!-- Custom css-->
         <link rel="stylesheet" href="css/styles.css" asp-append-version="true" />
+        
     </head>
+    <!-- <style>
+        body{
+            background-image: url(img/Fondo1.jpg);
+            background-size:cover;
+        }
+    </style> -->
 <body>
     <!-- Barra Navegador -->
     <!--navbar navbar-expand-lg bg-body-tertiary-->
@@ -25,22 +32,22 @@
           <a class="navbar-brand" href="#header">
           <img src="img/logo4.png" alt="Logo" width="120" height="50" class="d-inline-block align-text-top" >
           </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto" >
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#header">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Lecturas</a>
+                <a class="nav-link" href="pages/readings.html">Lecturas</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#about">Sobre mi</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled">Reserva Online</a>
+                <a class="nav-link" href="pages/apointment.html">Reserva Online</a>
               </li>
             </ul>
           </div>
@@ -120,7 +127,7 @@
                         Empática, proactiva, alto compromiso con mis clientes.
                         Experiencia con empresas transnacionales y con clientes recomendados de diversos países:
                         España, México, USA, Perú, Argentina, Bolivia, Panamá, Puerto Rico, Brasil, Colombia, entre otros.</p>
-                    <a href="#" class="btn btn-outline-secondary ml-3 mb-5">Read more</a>
+                    <a href="#" class="btn btn-mybtn ml-3 mb-5">Read more</a>
                 </div>
             </div>
         </div>
@@ -142,51 +149,66 @@
 
 
 <!-- Lecturas-->
-<div id="general" >
-    <h1 style="margin-top: 100px;">
-        Tipos de Lecturas
-    </h1>
-    <div class ="contenedor">
-        <figure>
-                <img src="img/Predictivo.jpg" width="340" height="360" title="Tarot Predictivo" />
+<section id="lecturas">
+    <div class="container readings-form">
+        <div class="row" style="margin-top: 10px; margin-bottom: 10px;">
+            <div class="col-md-12">
+                <h1 id:"fuenteCastalStreet" >Tipos de lectura:</h1>
+                <hr>
+            </div>
+        </div>
+        <div class="row" style="margin-bottom: 50px;">
+            <div class="col-md-4" >
+                <div class ="contenedor">
+                    <figure>
+                            <img src="img/Predictivo.jpg" width="340" height="360" title="Tarot Predictivo" />
 
-                <div class="capa">
-                    <h3>Tarot Predictivo</h3>
-                    <p>Presione para ver la descripción</p>
+                            <div class="capa">
+                                <h3>Tarot Predictivo</h3>
+                                <p>Presione para ver la descripción</p>
+                            </div>
+                    </figure>
+
                 </div>
-        </figure>
-
-    </div>
-    <div class="contenedor">
-        <figure>
-                <img src="img/Evolutivo2.jpg" width="340" height="360" title="Tarot Evolutivo" />
-
-            <div class="capa">
-                    <h3>Tarot Evolutivo</h3>
-                <p>Presione para ver la descripción</p>
             </div>
-        </figure>
+            <div class="col-md-4" >
+                <div class="contenedor">
+                    <figure>
+                            <img src="img/Evolutivo2.jpg" width="340" height="360" title="Tarot Evolutivo" />
 
-    </div>
-    <div class="contenedor">
-        <figure>
-                <img src="img/Arbol1.jpg" width="340" height="360" title="Tarot Genealógico" />
+                        <div class="capa">
+                                <h3>Tarot Evolutivo</h3>
+                            <p>Presione para ver la descripción</p>
+                        </div>
+                    </figure>
 
-            <div class="capa">
-                    <h3>Tarot Genealógico</h3>
-                <p>Presione para ver la descripción</p>
+                </div>
             </div>
-        </figure>
+            <div class="col-md-4" >
+                <div class="contenedor">
+                    <figure>
+                            <img src="img/Arbol1.jpg" width="340" height="360" title="Tarot Genealógico" />
+
+                        <div class="capa">
+                                <h3>Tarot Genealógico</h3>
+                            <p>Presione para ver la descripción</p>
+                        </div>
+                    </figure>
+
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-bottom: 50px;">
+            <a href="#" class="btn btn-mybtn mx-auto mb-5 ">Descubre mas aquí</a>
+        </div>
+
 
     </div>
-
-
-</div>
-
+</section>
 
 <!-- Contact-->
 <footer id="contact">
-    <div class="container" style="background-color: blue;">
+    <!-- <div class="container" style="background-color: blue;">
         <div class="row">
             <div class="col-md-5">
                 <form class="card">
@@ -212,6 +234,44 @@
                 </div>
             </div>
         </div>
+    </div> -->
+    <div class="container contact-form">
+        <h1>Contáctame</h1>
+        <hr>
+    
+        <div class="row">
+       
+           <div class="col-md-6">
+               <p>Email: Kathy_tarot@hotmail.com</p>
+               <p>Phone: +51 962-353-231</p>
+               <p>Lima - Perú</p>
+           </div>
+           <div class="col-md-6">
+               
+             <div class="form-group">
+                 <label>Nombre</label>
+                 <input type="text" class="form-control">
+             </div>
+    
+             <div class="form-group">
+                 <label>Email</label>
+                 <input type="text" class="form-control">
+             </div>
+    
+             <div class="form-group">
+                 <label>Mensaje</label>
+                 <textarea  class="form-control" rows="7"></textarea>
+             </div>
+    
+             <div class="form-group text-center">
+                 <a href="#" class="btn btn-mybtn ml-3 mb-5">Enviar</a>
+                 <!-- <button class="btn btn-primary btn-block">Send</button> -->
+             </div>
+    
+           </div>
+    
+        </div>
+    
     </div>
 </footer>
     <!-- Bootstrap scripts-->
