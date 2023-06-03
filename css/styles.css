@@ -231,6 +231,14 @@ p {
     position: center;
     vertical-align: middle;
 }
+a {
+    font-family: Candara;
+    line-height: 2em;
+    font-size: 20px;
+    position: center;
+    vertical-align: middle;
+    
+}
 
 figcaption {
     display:none;
