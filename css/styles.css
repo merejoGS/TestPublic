@@ -19,10 +19,13 @@ html {
 }*/
 
 
-header {
+.header {
     margin-top: 50px;
     height: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
+
 #fuenteCastalStreet {
     font-family: 'CastalStreet';
     font-size: 40px;
@@ -209,6 +212,7 @@ img.img-testimonial {
 .contenedor-test{
     width: 80%;
     height: 400px;
+    max-width: 400px;
     overflow: hidden;
     margin: auto;
 }
@@ -225,6 +229,7 @@ img.img-testimonial {
     width: 100%;
     height: 100%;
     flex-shrink: 0;
+    max-width: 400px;
     align-items: center;
     text-align: center;
     display: flex;
@@ -233,18 +238,37 @@ img.img-testimonial {
     background-image: url("../img/Fondo1.jpg");
 }
 
-.contenedor-header{
+.container-logo{
+    max-height: 400px;
+    min-height: 200px;
+    vertical-align: bottom;
+}
+
+.container-brand{
+    justify-content:center;
+    align-items:center;
+    display:flex;
+}
+
+.container-header{
+    justify-content:center;
+    align-items:center;
+    display:flex;
+}
+
+.container-header-text{
     width: 100%;
     height: 100%;
     flex-shrink: 0;
     align-items: center;
     text-align: center;
-    vertical-align: middle;
+    vertical-align: text-bottom;
     display: flex;
     flex-direction: column;
     color: white;
-    max-width: 900px;
+    max-width: 700px;
     min-width: 400px;
+    min-height: 400px;
     /* background-image: url("../img/Fondo1.jpg"); */
    
     .mensaje{
