@@ -368,7 +368,16 @@ hr{
 .bg-animated{
     width: 100%;
     height: 100%;
-    background: linear-gradient(to top, #fac5ff, #9f315d);
+    background-image: linear-gradient(
+        to bottom right, 
+        #fac5ff 0%, 
+        #bb7993 20%,
+        #bb64a4 40%,
+        #9b286d 60%,
+        #8a1d3e 80%
+        );
+        background-size: 200% 200%;
+        animation: movimiento 5s linear infinite alternate;
 }
 
 .bubble{
@@ -376,46 +385,70 @@ hr{
     opacity: .7;
     border-radius: 50%;
     position: relative;
-    bottom: 0;
+    /* bottom: 0; */
    
-    animation: bubbles 3s linear infinite;
+    animation: bubblesexplode 3s linear infinite;
 }
 .bubble:nth-child(1){
     width: 80px;
     height: 80px;
     left: 5%;
+    bottom: 50vh;
     animation-duration:  3s;
 }
 .bubble:nth-child(2){
     width: 120px;
     height: 120px;
     left: 50%;
+    bottom: 40vh;
     animation-duration:  10s;
 }
 .bubble:nth-child(3){
     width: 140px;
     height: 140px;
     left: 20%;
+    bottom: 60vh;
     animation-duration:  5s;
 }
 .bubble:nth-child(4){
     width: 100px;
     height: 100px;
     left: 80%;
-    animation-duration:  4s;
+    bottom: 100vh;
+    animation-duration:  8s;
 }
 
-@keyframes bubbles {
+ @keyframes bubbles {
     0%{
         bottom: 0;
         opacity: 0;
     }
     50%{
-        opacity: 0.4;
+        opacity: 0.3;
     }
     100%{
         bottom: 200vh;
         opacity: 0;
     }
     
+}
+@keyframes bubblesexplode {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.4;
+    }
+    100%{
+        opacity: 0;
+    }
+    
+} 
+@keyframes movimiento {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 100%;
+    }
 }
