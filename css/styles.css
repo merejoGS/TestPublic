@@ -286,12 +286,12 @@ img.img-testimonial {
    
     .mensaje{
         font-size: 3rem;
-        font-family: 'LocalGreatVibes', cursive;
+        font-family: 'LocalGreatVibes';
         color: white;
     }
     .firma{
         font-size: 1.5rem;
-        font-family: 'LocalGreatVibes', cursive;
+        font-family: 'LocalGreatVibes';
         color: white;
     }
 }
