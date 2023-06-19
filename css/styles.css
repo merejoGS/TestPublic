@@ -10,9 +10,13 @@ html {
 }
 
 @font-face {
+    font-family: 'LocalGreatVibes';
+    src: url('../fuentes/Great_Vibes/GreatVibes-Regular.ttf');
+}
+/* @font-face {
     font-family: 'CastalStreet';
     src: url('../fuentes/CastalStreet/Castal Street Bold.ttf');
-}
+} */
 /*@font-face {
     font-family: 'Saudagar';
     src: url('../fuentes/saudagar/Saudagar.ttf');
@@ -25,7 +29,16 @@ html {
     display: flex;
     flex-wrap: wrap;
 }
-
+#fuenteLocalGreatVibes {
+    font-family: 'LocalGreatVibes';
+    font-size: 40px;
+    clear: both;
+    font-family: cursive;
+    line-height: 1.5em;
+    color: mediumvioletred;
+    text-align: center;
+    margin-top: 40px;
+}
 #fuenteCastalStreet {
     font-family: 'CastalStreet';
     font-size: 40px;
@@ -162,7 +175,7 @@ centrado {
         transform:scale(1.3);
     }
     .contenedor figure .capa h3 {
-        font-family: CastalStreet;
+        font-family: LocalGreatVibes;
         line-height: 2em;
         font-size: 32px;
         margin-bottom: 120px;
@@ -300,7 +313,7 @@ img.img-testimonial {
 }*/
 h1 {
     clear: both;
-    /* font-family: 'CastalStreet'; */
+    font-family: 'LocalGreatVibes'; 
     line-height: 1.5em;
     color: mediumvioletred;
     text-align: center;
