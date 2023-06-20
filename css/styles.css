@@ -157,15 +157,29 @@ centrado {
         top: 0;
         width: 100%;
         height: 100%;
+        background: rgba(50, 50, 50, 0.5);
+        /*background: rgba(148, 123, 129, 0.5);
+         transition: all 500ms ease-out; 
+        opacity: 0;*/
+        visibility:visible;
+        text-align:center;
+        vertical-align: middle;
+    }
+    .contenedor figure .capa-back {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
         background: rgba(148, 123, 129, 0.8);
         transition: all 500ms ease-out;
         opacity: 0;
         visibility:hidden;
         text-align:center;
     }
-    .contenedor figure:hover > .capa {
+    .contenedor figure:hover > .capa-back {
         opacity:1;
         visibility:visible;
+        vertical-align: middle;
     }
     .contenedor figure:hover > .capa h3{
         margin-top: 70px;
@@ -178,11 +192,13 @@ centrado {
         font-family: LocalGreatVibes;
         line-height: 2em;
         font-size: 32px;
-        margin-bottom: 120px;
-        margin-top: 30px;
-        transition: all 500ms ease-out;
+        margin-bottom: 20px;
+        margin-top: 100px;
+        transition: all 500ms linear;
         color: white;
         font-weight: 400;
+        text-align: center;
+        vertical-align: middle;
     }
 
     .contenedor figure .capa p {
@@ -248,7 +264,9 @@ img.img-testimonial {
     display: flex;
     flex-direction: column;
     font-size: 10px ;
-    background-image: url("../img/Fondo1.jpg");
+    background-image: url("../img/postit2.png");
+    background-position: center;
+    background-size: 100%;
 }
 
 .container-logo{
@@ -282,45 +300,27 @@ img.img-testimonial {
     max-width: 700px;
     min-width: 400px;
     max-height: 400px;
-    /* background-image: url("../img/Fondo1.jpg"); */
-   
-    .mensaje{
-        font-size: 3rem;
-        font-family: 'LocalGreatVibes';
-        color: white;
-    }
-    .firma{
-        font-size: 1.5rem;
-        font-family: 'LocalGreatVibes';
-        color: white;
-    }
 }
 .mensaje{
-        font-size: 3rem;
-        font-family: 'LocalGreatVibes';
-        color: white;
-    }
-    .firma{
-        font-size: 1.5rem;
-        font-family: 'LocalGreatVibes';
-        color: white;
-    }
-
-/*.zoom {
-    transition: transform .5s;
+    font-size: 3rem;
+    font-family: 'LocalGreatVibes';
+    color: white;
+}
+.firma{
+    font-size: 1.5rem;
+    font-family: 'LocalGreatVibes';
+    color: white;
+}
+.mensaje-test{
+    font-size: 1.3rem;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family: 'LocalGreatVibes';
+    color: black;
+    
 }
 
-.zoom:hover {
-        transform: scale(1.10);
-        filter: brightness(60%)
-}
-
-.transition {
-    -webkit-transform: scale(1.8);
-    -moz-transform: scale(1.8);
-    -o-transform: scale(1.8);
-    transform: scale(1.8);
-}*/
 h1 {
     clear: both;
     font-family: 'LocalGreatVibes'; 
@@ -371,11 +371,28 @@ hr{
     background: white;
 }
 
+.aboutme-form{
+    background:rgba(0,0,0, .0);
+    margin-top: 10px;
+
+    padding: 20px;
+    box-shadow: 0px 0px 10px 3px grey;
+}
 .readings-form{
     background:rgba(0,0,0, .0);
     color:white;
     margin-top: 10px;
 
+    padding: 20px;
+    box-shadow: 0px 0px 10px 3px grey;
+}
+.testimoniasls-form{
+    background:rgba(0,0,0, .0);
+    background-image: url("../img/back1.jpg");
+    background-size: 100%;
+    color:black;
+    margin-top: 10px;
+    font-family: "LocalGreatVibes";
     padding: 20px;
     box-shadow: 0px 0px 10px 3px grey;
 }
