@@ -265,8 +265,9 @@ img.img-testimonial {
     flex-direction: column;
     font-size: 10px ;
     background-image: url("../img/postit2.png");
-    background-position: center;
-    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 
 .container-logo{
