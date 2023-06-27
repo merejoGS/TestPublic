@@ -20,7 +20,7 @@
         <link rel="shortcut icon" href="../img/favicon.png">
                         
     </head>
-<body>
+<body onload="PlayAudio()" onclick="PlayAudio()">
     <!-- Barra Navegador -->
     <!--navbar navbar-expand-lg bg-body-tertiary-->
     <!--navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3
@@ -126,6 +126,9 @@
             - kathytarot -
         </p>
     </div>
+    <audio id="audio" autoplay playinline loop>
+        <source src="/audio/cancion.mp3" type="../audio/mp3">
+    </audio>
 
 </footer>
 
